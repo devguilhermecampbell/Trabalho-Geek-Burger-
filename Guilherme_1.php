@@ -7,7 +7,7 @@
 <body>
     <h1>Seja Bem-Vindo ao Burger Geek!</h1>
 
-    <form action="Guilherme_2.php" method="POST">
+    <form action="guilherme_2.php" method="POST">
 
         <p>
             <label>Nome do Cliente:</label><br>

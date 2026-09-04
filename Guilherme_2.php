@@ -63,3 +63,14 @@ $fidelidade = $_POST['fidelidade'];
     echo "<p><strong>Total Final com Desconto:</strong> R$ " . number_format($totalFinal, 2, ',', '.') . "</p>";
 
 ?>
+
+<form action="guilherme_3.php" method="POST">
+
+    <!-- Repassa dinamicamente o nome digitado no Guilherme_1.php -->
+    <input type="hidden" name="nome" value="<?php echo $_POST['nome'] ?? ''; ?>">
+    
+    <!-- Repassa o valor/total calculado no Guilherme_2.php -->
+    <input type="hidden" name="total" value="<?php echo $valor_final ?? $total ?? 0; ?>">
+    
+    <button type="submit">Ver Resumo (Guilherme 3)</button>
+</form>
